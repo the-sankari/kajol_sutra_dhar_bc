@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kajol sutra dhar</title>
+    <!-- LOCAL CSS FILES START -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <!-- LOCAL CSS FILES END -->
+
+    <!-- GOOGLE FONTS START-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE FONTS END -->
+
+    <script
+      src="https://kit.fontawesome.com/66cc8469ce.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ******** HEADER START ********* -->
+    <header class="sticky">
+      <div class="logo-div">
+        <img src="./assets/images/logo-white.png" width="100" alt="KDEV logo" />
+      </div>
+      <nav class="top-nav">
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="menu-items">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ******** HEADER END ********* -->
+
+    <!-- ******** MAIN CONTAINER START ********* -->
+
+    <main class="main-container">
+      <!-- ******** HOME CONTAINER START ********* -->
+      <section id="home">
+        <!-- ******** HOME TOP START ********* -->
+        <div class="home-top">
+          <h2 class="name">Hei! I am <span>Kajol</span></h2>
+          <div class="text-container">
+            <h2>A full stack web developer</h2>
+            <p>Crafting digital dream into reality</p>
+          </div>
+        </div>
+        <!-- ******** HOME TOP END ********* -->
+
+        <!-- ******** HOME BOTTOM START ********* -->
+        <div class="home-bottom">
+          <div class="home-button-container">
+            <!-- 'Learn More' button -->
+            <a href="#" class="button learn-more">
+              <span>Learn More</span>
+            </a>
+
+            <!-- 'See Work' button -->
+            <a href="#" class="button see-work">
+              <span>See Work</span>
+            </a>
+          </div>
+        </div>
+        <!-- ******** HOME BOTTOM END ********* -->
+      </section>
+      <!-- ******** HOME CONTAINER END ********* -->
+
+      <!-- ******** ABOUT CONTAINER START ********* -->
+      <section id="about">
+        <div class="about-left">
+          <img src="./assets/images/ilust-1.png" height="400"  alt="About image illustration">
+        </div>
+      </section>
+      <!-- ******** ABOUT CONTAINER END ********* -->
+
+      <!-- ******** PROJECTS CONTAINER START ********* -->
+      <section id="projects">Projects</section>
+      <!-- ******** PROJECTS CONTAINER END ********* -->
+
+      <!-- ******** CONTACT CONTAINER START ********* -->
+      <section id="contact">Contact</section>
+      <!-- ******** CONTACT CONTAINER END ********* -->
+    </main>
+    <!-- ******** MAIN CONTAINER END ********* -->
+
+    <!-- ******** FOOTER START ********* -->
+    <footer>
+      <p>all rights &copy; kajol sutra dhar <span id="currentYear"></span></p>
+    </footer>
+    <!-- ******** FOOTER END ********* -->
+
+    <script>
+      // JavaScript for mobile responsive navbar
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.querySelector(".menu-toggle");
+        const menuItems = document.querySelector(".menu-items");
+
+        menuToggle.addEventListener("click", function () {
+          menuItems.classList.toggle("active");
+        });
+        // current year
+        var currentYear = new Date().getFullYear();
+        document.getElementById("currentYear").textContent = currentYear;
+      });
+    </script>
+  </body>
+</html>

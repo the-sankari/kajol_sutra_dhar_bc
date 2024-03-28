@@ -1,4 +1,0 @@
-# PORTFOLIO
-
-## Kajol Sutra Dhar
-

@@ -1,0 +1,10 @@
+#about{
+    background: linear-gradient(45deg,#111 10%,#595959 10% ,#000000ef 11%,#42424217 50%, #2b2b2bae 90%, #e6dcdc4d 91%, #000000f8 91%);
+}
+
+.about-left img{
+    filter: brightness(50);
+    opacity: .5;
+    border-radius: 50%;
+}
+

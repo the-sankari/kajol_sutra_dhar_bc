@@ -1,74 +1,114 @@
+/* header.css */
+
 header {
-  margin-top: 20px;
-  width: 100vw;
-  /* background-color: blanchedalmond; */
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  position: fixed;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+/* Sticky header */
+.sticky {
+  position: sticky;
   top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* background-color: #333; */
 }
 
-.topnav{
-    background-color: #11111147;
-    height: 100px;
-    border-radius: 100px;
+.logo-div img {
+  display: block;
+  padding: 8px 0;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none; /* Hide the menu toggle button by default */
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items li {
+  margin-right: 20px;
+}
+
+.menu-items li:last-child {
+  margin-right: 0;
+}
+
+.menu-items li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px;
+}
+
+.menu-items li a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  .menu-items {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    border: 8px solid #0000000a;
-    box-shadow: 0 0 300px #111 inset;
-    transition: all 1s ease-in-out;
-    position: fixed;
-    top: 100px;
-}
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    /* background-color: #333; */
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0; /* Initially hide the menu */
+    pointer-events: none;
+  }
 
-.main-logo, .topnav:hover {
-    width: 100px;
-    top: 90px;
-}
-
-.topnav ul {
-    display: flex;
-    justify-content: center;
-}
-
-.topnav ul li {
-    list-style-type: none;
-
-}
-.topnav ul li a{
-    text-decoration: none;
-    color: #333;
-    padding: 10px 10px;
-    /* background-color: rgb(189, 215, 199); */
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  .menu-toggle {
+    display: block; /* Show the menu toggle button on smaller screens */
+    color: #fff;
     font-size: 20px;
-    font-weight: bold;
-}
-.topnav ul li a:hover {
-    color: #715120c2;
+    cursor: pointer;
+  }
 
-}
-
-/* logo starts  */
-
-.main-logo{
-    padding: 5px;
-    /* background-color: #715120; */
-    min-width: 100px;
-    max-width: 300px;
-    margin-left: 20px;
+  .menu-items.active {
+    /*  display: flex; Show the menu items when active class is applied */
+    opacity: 1; /* Show the menu items with a smooth fade-in effect */
+    pointer-events: auto;
+  }
+  .menu-items li {
+    display: block;
+    width: 100%;
     text-align: center;
-    
+    margin: 0;
+  }
+  .menu-items li a {
+    display: block;
+    width: 100%;
+    margin: 5px auto;
+    /* background-color: aqua; */
+    padding: 10px 0;
+  }
 }
-.main-logo img{
-    width: 50px;
-    height: 50px;
+
+/* Additional media queries for larger screens */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .menu-items {
+    font-size: 14px;
+  }
 }
 
-
-/* logo ends  */
-
+@media screen and (min-width: 1025px) {
+  .menu-items {
+    font-size: 16px;
+  }
+}
