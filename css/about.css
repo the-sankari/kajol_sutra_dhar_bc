@@ -20,6 +20,7 @@
   display: block;
   position: relative;
   width: 68%;
+  max-width: 68%;
   border: 1px solid #89898973;
   margin-top: 8px;
 }
@@ -105,4 +106,3 @@
     overflow: scroll;
   }
 }
-
