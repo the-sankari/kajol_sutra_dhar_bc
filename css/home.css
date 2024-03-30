@@ -26,6 +26,7 @@ section {
   display: block;
   position: relative;
   width: 69.5%;
+  max-width: 70%;
   border: 1px solid #89898973;
   margin-top: 8px;
 }
@@ -112,4 +113,27 @@ section {
 /* Adjust styles for 'Learn More' and 'See Work' buttons */
 .see-work::before {
   background: linear-gradient(to right, transparent, #2196f3);
+}
+
+@media screen and (max-width: 768px) {
+  #home .home-top {
+    flex: 1;
+    padding-bottom: 0px;
+  }
+
+  .home-button-container {
+    flex-direction: column;
+  }
+  .text-container p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+  }
+  #home:after {
+    width: 50%;
+    max-width: 50%;
+  }
+
+  .button {
+    margin: 10px;
+  }
 }
