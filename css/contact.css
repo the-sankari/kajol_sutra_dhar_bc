@@ -1,125 +1,155 @@
- 
-.wrapper { 
-    max-width: 1100px; 
-    width: 100%; 
-    position: relative; 
-  
-} 
-  
-.wrapper i { 
-    height: 50px; 
-    width: 50px; 
-    background: rgb(118, 233, 118); 
-    text-align: center; 
-    line-height: 50px; 
-    border-radius: 50%; 
-    cursor: pointer; 
-    position: absolute; 
-    top: 50%; 
-    font-size: 1.25 rem; 
-    transform: translateY(-50%); 
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23); 
-  
-} 
-  
-.wrapper i:first-child { 
-    left: -22px; 
-  
-} 
-  
-.wrapper i:last-child { 
-    right: -22px; 
-  
-} 
-  
-.wrapper .carousel { 
-    display: grid; 
-    grid-auto-flow: column; 
-    grid-auto-columns: calc((100% / 3) - 12px); 
-    gap: 16px; 
-    overflow-x: auto; 
-    scroll-snap-type: x mandatory; 
-    scroll-behavior: smooth; 
-    scrollbar-width: 0; 
-} 
-  
-.carousel::-webkit-scrollbar { 
-    display: none; 
-} 
-  
-.carousel :where(.card, .img) { 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-} 
-  
-.carousel.dragging { 
-    scroll-snap-type: none; 
-    scroll-behavior: auto; 
-} 
-  
-.carousel.no-transition { 
-    scroll-behavior: auto; 
-} 
-  
-.carousel.dragging .card { 
-    cursor: grab; 
-    user-select: none; 
-} 
-  
-.carousel .card { 
-    scroll-snap-align: start; 
-    height: 340px; 
-    list-style: none; 
-    background: #fff; 
-    border-radius: 8px; 
-    display: flex; 
-    cursor: pointer; 
-    width: 98%; 
-    padding-bottom: 15px; 
-    align-items: center; 
-    justify-content: center; 
-    flex-direction: column; 
-} 
-  
-.card .img { 
-    background: green; 
-    width: 145px; 
-    height: 145px; 
-    border-radius: 50%; 
-  
-} 
-  
-.card .img img { 
-    width: 140px; 
-    height: 140px; 
-    object-fit: cover; 
-    border-radius: 50%; 
-    border: 4px solid #fff; 
-} 
-  
-.card h2 { 
-    font-weight: 500; 
-    font-size: 1.56rem; 
-    margin: 30px 0 5px; 
-} 
-  
-.card span { 
-    color: #6a6d78; 
-    font-size: 1.31rem; 
-  
-} 
-  
-@media screen and (max-width: 900px) { 
-    .wrapper .carousel { 
-        grid-auto-columns: calc((100% / 2) - 9px); 
-  
-    } 
-} 
-  
-@media screen and (max-width: 600px) { 
-    .wrapper .carousel { 
-        grid-auto-columns: 100%; 
-  
-    } 
+#contact {
+  background: linear-gradient(
+    45deg,
+    #111 10%,
+    #595959 10%,
+    #000000ef 11%,
+    #42424217 50%,
+    #2b2b2bae 90%,
+    #e6dcdc4d 91%,
+    #000000f8 91%
+  );
+  display: flex;
+  flex-direction: column;
+  /* border-top: .1px solid white; */
+  overflow: scroll;
+  align-items: center;
+}
+
+#contact::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 72%;
+  border: 1px solid #89898973;
+}
+
+/* Style the title */
+section#contact h3 {
+  font-size: 2em;
+  margin: 20px;
+}
+
+.contact-container {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+/* Style the contact information section (left side) */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  padding-top: 40px;
+}
+
+/* Style the social media icons */
+.social-media-container {
+  margin-top: 20px;
+}
+
+.contact-left p {
+  font-size: 2rem;
+}
+
+.social-media-container a i {
+  font-size: 3em;
+  margin: 0 10px;
+  /* color: #fbad50 ; */
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media-container a {
+  color: #999;
+  text-decoration: none;
+}
+
+/* Style social media icons on hover (default) */
+.social-media-container i:hover {
+  color: #007bff; /* Blue (default hover color) */
+}
+
+/* Style LinkedIn icon on hover */
+.fa-brands.fa-linkedin:hover {
+  color: #0077b5; /* LinkedIn blue */
+}
+
+/* Style Instagram icon on hover */
+.fa-brands.fa-square-instagram:hover {
+  color: #e1306c; /* Instagram pink */
+}
+
+/* Style GitHub icon on hover */
+.fa-brands.fa-github:hover {
+  color: #f460cd; /* GitHub purple */
+}
+
+/* Style the form section (right side) */
+.contact-right {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10%;
+}
+/* Style the form */
+form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 80%;
+  margin-top: 20px;
+  max-height: 100%;
+}
+
+/* Style the form caption */
+form#contact-form p {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+}
+
+/* Style the input sections */
+.input-section {
+  margin-bottom: 15px;
+}
+
+.input-section label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #222;
+  border-radius: 3px;
+  box-sizing: border-box; /* Include padding in width calculation */
+  background: #555;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+  background-color: #222;
 }

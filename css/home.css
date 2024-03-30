@@ -41,7 +41,7 @@ section {
   padding-bottom: 50px;
 }
 
-.name {
+.greeting {
   font-size: 2rem;
   padding: 10px 0;
 }
@@ -66,8 +66,8 @@ section {
   align-items: flex-start;
   justify-content: center;
 }
-.weather{
-    align-self: center;
+.weather {
+  align-self: center;
 }
 .home-button-container {
   width: 100%;
