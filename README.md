@@ -21,7 +21,10 @@ This repository contains the source code for my portfolio website. It showcases 
 
 ## Usage
 
-To view the website locally, open `index.html` in a web browser.
+To view the website
+Go to [Kajol Sutra Dhar's portfolio](https://the-sankari.github.io/kajol_sutra_dhar_bc/)
+
+ or open locally this `index.html`  [file](./index.html) in a web browser.
 
 ## Technologies Used
 
