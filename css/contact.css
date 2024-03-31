@@ -12,15 +12,17 @@
   display: flex;
   flex-direction: column;
   /* border-top: .1px solid white; */
-  overflow: scroll;
   align-items: center;
+  position: relative;
+  height: 100vh;
 }
 
 #contact::before {
   content: "";
   display: block;
   position: relative;
-  width: 72%;
+  width: 68%;
+  max-width: 72%;
   border: 1px solid #89898973;
 }
 
@@ -39,9 +41,10 @@ section#contact h3 {
 .contact-left {
   display: flex;
   flex-direction: column;
-  width: 40%;
   align-items: center;
-  padding-top: 40px;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10px;
 }
 
 /* Style the social media icons */
@@ -89,7 +92,7 @@ section#contact h3 {
 /* Style the form section (right side) */
 .contact-right {
   display: flex;
-  width: 60%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   margin-right: 10%;
@@ -99,7 +102,7 @@ form {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  width: 80%;
+  width: 100%;
   max-width: 80%;
   margin-top: 20px;
   max-height: 100%;
@@ -152,4 +155,41 @@ input[type="submit"] {
 /* Style the submit button on hover */
 input[type="submit"]:hover {
   background-color: #222;
+}
+
+@media screen and (max-width: 768px) {
+  #contact::before {
+    width: 50%;
+    max-width: 60%;
+  }
+  .contact-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .contact-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 10px;
+  }
+  form#contact-form p {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  .social-media-container a i {
+    font-size: 2em;
+  }
+  .contact-left p {
+    font-size: 1.5rem;
+  }
+  .contact-right {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0%;
+    margin-bottom: 10px;
+  }
 }
