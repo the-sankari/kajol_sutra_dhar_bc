@@ -39,7 +39,7 @@
   flex: 0 0 calc(100% - 16px); /* Set width of card container */
   background: url(../assets/images/logo_big.png) no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 50%;
   background-color: #222222;
   height: 100%;
   border-radius: 10px;

@@ -1,41 +1,83 @@
+/* Footer Styles */
 footer {
-    background: linear-gradient(to bottom, #222222, #111111);
-    padding: 20px 0;
-    color: #ddd;
+  background: linear-gradient(
+    to right,
+    #303841,
+    #434c57
+  ); /* Gradient Background */
+  color: #fff; /* White Text */
+  padding: 30px 0;
+  display: flex; /* Make footer elements flexible */
+  justify-content: space-between; /* Distribute elements horizontally */
+  align-items: center; /* Align elements vertically */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.footer-container {
+  display: flex; /* Make footer container flexible for better layout */
+  align-items: center;
+  flex-wrap: wrap; /* Allow elements to wrap on smaller screens */
+  width: 80%; /* Limit container width to prevent overflow */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.weather,
+.footer-center,
+.social-media {
+  flex: 1; /* Distribute available space equally among these divs */
+  text-align: left; /* Center content within each section */
+}
+.weather p {
+  opacity: 0.8;
+}
+.weather span {
+  margin-right: 5px; /* Add spacing between weather elements */
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+.refresh-button {
+  background-color: transparent; /* Blue color */
+  color: #999;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer; /* Indicate clickable button */
+  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.refresh-button:hover {
+  color: #fffff0; /* Darker blue on hover */
+}
+
+.refresh-spin {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
   }
-  
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  to {
+    transform: rotate(360deg);
   }
-  
-  .footer-logo a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .footer-center {
-    text-align: left;
-  }
-  
-  .social-media {
-    text-align: right;
-  }
-  
-  .footer-center a,
-  .social-media a {
-    margin: 0 5px;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .footer-center a:hover {
-    opacity: 1.1;
-  }
-  
-  .social-media a:hover {
-    opacity: 0.8;
-  }
-  
+}
+
+.footer-center p {
+  font-weight: bold; /* Bold font for copyright text */
+  text-align: center;
+}
+
+.social-media {
+  text-align: right;
+}
+/* Social Media Links */
+.social-media a {
+  color: inherit; /* Inherit footer text color (white) */
+  margin: 0 10px; /* Add spacing between social media icons */
+  font-size: 1.5rem; /* Increase icon size for a more prominent look */
+  transition: transform 0.3s ease-in-out; /* Add smooth hover effect */
+}
+
+.social-media a:hover {
+  transform: scale(1.1); /* Scale icons slightly on hover */
+  color: #00ffff; /* Cyan hover color */
+}
