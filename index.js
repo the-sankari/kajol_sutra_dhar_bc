@@ -5,7 +5,7 @@ const projectData = [];
 
 // Check if project data is available, if not fetch it from an external source
 if (projectData.length === 0) {
-  fetch("../projects.json") // keeping the json file in root folder
+  fetch("./projects.json") // keeping the json file in root folder
     .then((response) => response.json())
     .then((data) => {
       localStorage.setItem("projects", JSON.stringify(data)); // Store data in local storage for future use
