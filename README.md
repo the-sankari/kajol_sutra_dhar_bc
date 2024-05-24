@@ -39,3 +39,6 @@ Go to [Kajol Sutra Dhar's portfolio](https://the-sankari.github.io/kajol_sutra_d
 ## License
 
 This project is licensed under the MIT License.
+
+## Author
+* kajol sutra dhar
