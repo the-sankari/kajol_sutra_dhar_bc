@@ -1,12 +1,12 @@
 /* header and navbar */
-header{
-  background-color: var( --secondary-color1);
+header {
+  background-color: var(--secondary-color1);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,12 +14,12 @@ header{
 }
 
 /* Hamburger style */
-.hamburger{
+.hamburger {
   display: none;
   z-index: 11111;
 }
 
-.bar{
+.bar {
   display: block;
   width: 25px;
   height: 3px;
@@ -29,80 +29,76 @@ header{
   background-color: var(--text-color-light);
 }
 
-.nav-menu{
+.nav-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.nav-item{
+.nav-item {
   margin-left: 5rem;
 }
 
-.nav-link{
+.nav-link {
   font-size: 1.5rem;
   font-weight: 400;
-  color: #475569;
   list-style: none;
   padding: 10px;
 }
-.nav-link:hover{
-  color: #482ff7;
-}
 
-.nav-link a{
+.nav-link a {
   text-decoration: none;
   color: var(--text-color-light);
+  transition: all .3s ease-in-out;
+}
+.nav-link a:hover {
+  color: var(--text-color-dark);
+  text-decoration: underline;
 }
 
-.nav-logo{
+.nav-logo {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-color-light);
 }
 
 @media only screen and (max-width: 768px) {
-  header{
-    background-color: var( --primary-color);
+  header {
+    background-color: var(--primary-color);
   }
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: var(--background-color);
-      width: 100%;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: var(--background-color);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav-menu.active {
-      left: 0;
+    left: 0;
   }
 
   .nav-item {
-      margin: 2.5rem 0;
+    margin: 2.5rem 0;
   }
 
   .hamburger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
-}
+  }
 
-.hamburger.active .bar:nth-child(1) {
+  .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-}
+  }
 
-.hamburger.active .bar:nth-child(3) {
+  .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+  }
 }
-
-
-
-}
-
