@@ -1,6 +1,12 @@
-/* :root{
-
-} */
+:root {
+  --primary-color: #111;
+  --secondary-color1: #222222c8;
+  --secondary-color: #fefefe;
+  --background-color: #111;
+  --text-color: #fff;
+  --text-color-light: #f7f7f7;
+  --text-color-dark: #444;
+}
 
 * {
   margin: 0;
@@ -15,4 +21,3 @@ body {
   background: #111;
   color: #fff;
 }
-
