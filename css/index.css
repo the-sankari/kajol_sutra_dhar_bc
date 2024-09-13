@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #111;
-  --secondary-color1: #222222c8;
-  --secondary-color: #fefefe;
-  --background-color: #111;
-  --text-color: #fff;
-  --text-color-light: #f7f7f7;
-  --text-color-dark: #666;
+  --primary-color: #000;
+  --secondary-color: #FF7303;
+  --text-color: #FF7303;
+  --text-color-2: #ffffff;
+  --text-color-hover: #ff7403c5;
+  --text-color-light: #FFF5ED;
+  --text-color-dark: #2E2C2B;
 }
 
 * {
@@ -18,6 +18,6 @@
 }
 
 body {
-  background: #111;
-  color: #fff;
+  background: var(--primary-color);
+  color: var(--text-color-light);
 }
