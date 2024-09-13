@@ -18,10 +18,11 @@
   align-items: center;
   justify-content: center;
   .hero-letter {
-    font-size: 15vw;
+    font-size: 6vw;
     color: var(--text-color);
     opacity: 0.5;
     font-weight: 900;
+    padding: 20px 0;
   }
 }
 
