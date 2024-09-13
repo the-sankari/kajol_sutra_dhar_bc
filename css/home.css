@@ -73,22 +73,25 @@ hr::after {
 .home-buttons-container {
   display: flex;
   a {
-    color: var(--text-color-dark);
+    color: var(--text-color);
     text-decoration: none;
+
   }
 }
 
 .button {
-  background-color: var(--text-color-2);
+  background-color: var(--text-color-dark);
   padding: 10px 16px;
   margin: 5px;
+  border: 1px solid;
   border-radius: 5px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 .button:hover {
   background-color: var(--text-color);
-  color: var(--primary-color);
+  color: var(--text-color-dark);
+  border: 1px solid var(--text-color-2);
 }
 
 .digit {
