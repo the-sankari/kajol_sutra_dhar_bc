@@ -1,108 +1,57 @@
-#about {
-  background: linear-gradient(
-    45deg,
-    #111 10%,
-    #595959 10%,
-    #000000ef 11%,
-    #42424217 50%,
-    #2b2b2bae 90%,
-    #e6dcdc4d 91%,
-    #000000f8 91%
-  );
+#about{
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  justify-content: center;
+  background-color: var(--text-color-light);
+  color: var(--text-color-dark);
+  padding: 30px;
 }
-
-#about:after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 68%;
-  max-width: 68%;
-  border: 1px solid #89898973;
-  margin-top: 8px;
+.section-head{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--text-color);
 }
-
-#about h3 {
-  flex: 1;
-  text-align: center;
-  font-size: 2em;
-  margin-top: 20px;
-  padding: 0px;
-}
-
-.about-container {
-  flex: 6;
+.about-container{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.about-left {
-  flex: 1;
-  height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-}
-
-.about-left img {
-  filter: brightness(50);
-  opacity: 0.5;
-  border-radius: 50%;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.about-text {
-  flex: 1.4;
-  align-self: flex-start;
-  line-height: 2;
   padding: 20px;
- 
-  max-width: 100%;
+  margin: 20px;
 }
 
-.about-text:after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 50%;
-  border: 1px solid #898989;
-  margin-top: 8px;
+.about-img{
+  text-align: center;
+  padding: 16px;
+  img{
+    width: 60%;
+    height: 90%;
+  }
 }
 
-@media screen and (max-width: 768px) {
-  #about:after {
-    width: 50%;
+.about-text{
+  padding: 20px;
+  box-shadow: 0 0 5px 0px var(--text-color);
+  max-width: 50%;
+  border-radius: 5px;
+  p{
+    font-size: 1.5rem;
+    span{
+      color: var(--text-color);
+    }
   }
+}
 
-  .about-left {
-    flex: 0.5;
-    height: 100%;
-    max-height: 100%;
-    max-width: 100%;
-  }
-
-  .about-left img {
-    max-height: 100px;
-  }
-  .about-container {
-    flex: 6;
-    display: flex;
+@media only screen and (max-width: 1060px) {
+  .about-container{
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
   }
-  .about-text {
-    flex: 2;
-    align-self: flex-start;
-    line-height: 1.5;
-    padding: 20px;
-    /* border: 1px solid; */
+  .about-text{
     max-width: 100%;
-    font-size: 14px;
-    overflow: scroll;
+    padding: 5px;
+    margin: 5px;
+    p{
+      font-size: 1rem;
+    }
   }
 }
