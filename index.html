@@ -89,12 +89,12 @@
           </div>
           <div class="home-buttons-container">
             <!-- 'Learn More' button -->
-            <a href="#about" class="button learn-more">
+            <a href="#about" class="button">
               <span>Learn More</span>
             </a>
 
             <!-- 'See Work' button -->
-            <a href="#projects" class="button see-work">
+            <a href="#projects" class="button">
               <span>See Work</span>
             </a>
           </div>
@@ -111,7 +111,7 @@
 
       <!-- ******** ABOUT CONTAINER START ********* -->
       <section id="about">
-        <h3 class="section-head" >About Me</h3>
+        <h3 class="section-head">About Me</h3>
         <div class="about-container">
           <div class="about-img">
             <img
@@ -143,98 +143,21 @@
               development, feel free to reach out!
             </p>
           </div>
-
-
         </div>
       </section>
       <!-- ******** ABOUT CONTAINER END ********* -->
 
       <!-- ******** PROJECTS CONTAINER START ********* -->
       <section id="projects">
-        <h3>Projects</h3>
-        <div class="project-preview-container">
-          <div class="project-preview" data-preview-id="1"></div>
-        </div>
-
-        <div class="carousel">
-          <div class="m-card-container">
-            <div class="m-card" data-preview-id="1">
-              <img
-                src="./assets/projects-img/project-1.png"
-                width="250px"
-                height="100%"
-                alt="Project-pokemon"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="pokemon">Pokemon</h3>
-              </div>
-            </div>
-            <div class="m-card" data-preview-id="2">
-              <img
-                src="./assets/projects-img/project-2.png"
-                width="250px"
-                height="100%"
-                alt="Project-calculator"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="calculator">
-                  Simple Calculator
-                </h3>
-              </div>
-            </div>
-            <div class="m-card" data-preview-id="3">
-              <img
-                src="./assets/projects-img/project-3.png"
-                width="250px"
-                height="100%"
-                alt="Project-todo webapp"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="todo-webapp">
-                  Todo Web app
-                </h3>
-              </div>
-            </div>
-            <div class="m-card" data-preview-id="4">
-              <img
-                src="./assets/projects-img/project-4.png"
-                width="250px"
-                height="100%"
-                alt="Project-quze-site"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="quiz-site">
-                  Quize Site
-                </h3>
-              </div>
-            </div>
-            <div class="m-card" data-preview-id="5">
-              <img
-                src="./assets/projects-img/project-5.png"
-                width="250px"
-                height="100%"
-                alt="Project-rock-paper-scissors"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="rock-paper-scissors">
-                  Rock Paper Scissors
-                </h3>
-              </div>
-            </div>
-            <div class="m-card" data-preview-id="6">
-              <img
-                src="./assets/projects-img/project-6.png"
-                width="250px"
-                height="100%"
-                alt="Project-survey-form"
-              />
-              <div class="card-info hidden">
-                <h3 class="card-title" data-card-title="survey-form">
-                  Survey Form
-                </h3>
-              </div>
-            </div>
+        <h3 class="section-head">Projects</h3>
+        <div id="project-gallery" class="gallery"></div>
+        <!-- Modal for Project details -->
+        <div id="modal" class="modal">
+          <div class="modal-content">
+            <img id="modal-img" src="" alt="Project Image" />
+            <div id="modal-info"></div>
           </div>
+          <span class="close">&times;</span>
         </div>
       </section>
       <!-- ******** PROJECTS CONTAINER END ********* -->
@@ -340,6 +263,7 @@
     <script src="./index.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/weather.js"></script>
-    <!-- <script src="./js/matrix.js"></script> -->
+    <script src="./js/projects.js"></script>
+    <script src="./js/matrix.js"></script>
   </body>
 </html>
