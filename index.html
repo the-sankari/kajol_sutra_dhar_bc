@@ -164,38 +164,43 @@
 
       <!-- ******** CONTACT CONTAINER START ********* -->
       <section id="contact">
-        <h3>CONTACT ME</h3>
+        <h3 class="section-head">CONTACT ME</h3>
         <div class="contact-container">
           <div class="contact-left">
             <p>Let's Work Togather</p>
-            <div class="social-media-container">
-              <a
-                href="https://www.instagram.com/kajol_isnt_here?igsh=dXB2OGZ1NzhrYXYy"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-square-instagram"></i
-              ></a>
-              <a
-                href="http://www.linkedin.com/in/kajol-sutra-dhar"
-                target="_blank"
-                rel="noopener noreferrer"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a
-                href="https://github.com/the-sankari"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i class="fa-brands fa-github"></i>
-              </a>
+            <div class="profile-card">
+              <img src="./assets/images/profp.png" alt="kajol sutra dhar" >
+              <h1>Kajol Sutra Dhar</h1>
+              <p class="profile-titile">Full Stack Web Dev</p>
+              <p>Business College, Helsinki</p>
+              <div class="social-media-container" style="margin: 24px 0;">
+                <a
+                  href="https://www.instagram.com/kajol_isnt_here?igsh=dXB2OGZ1NzhrYXYy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-square-instagram"></i
+                ></a>
+                <a
+                  href="http://www.linkedin.com/in/kajol-sutra-dhar"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/the-sankari"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="contact-right">
             <form action="./php/process.php" method="post" id="contact-form">
-              <caption>
+              <caption class="caption">
                 <p>Send me a message</p>
               </caption>
-              <br />
               <div class="name input-section">
                 <label for="name">Name: </label>
                 <input type="text" name="name" id="name" required />
@@ -214,7 +219,7 @@
                   required
                 ></textarea>
               </div>
-              <input type="submit" value="Send" id="send-btn" />
+              <input class="submit-button" type="submit" value="Send" id="send-btn" />
             </form>
           </div>
         </div>
