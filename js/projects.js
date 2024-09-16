@@ -7,7 +7,7 @@ const projectModalInfo = document.querySelector("#modal-info");
 
 const modalCloseBtn = document.querySelector(".close");
 
-fetch("/projects.json")
+fetch("./projects.json")
   .then((response) => response.json())
   .then((data) => {
     data.forEach((project) => {
