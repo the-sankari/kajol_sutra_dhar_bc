@@ -1,26 +1,44 @@
 [
   {
     "id": 1,
-    "title": "Pokemon",
-    "imageSrc": "../projects-img/project-1.png",
-    "description": "A web-based application that allows users to view information and statistics about different Pokemon characters. Users can search for specific Pokemon or browse through a list.",
+    "title": "Species App",
+    "imageSrc": "https://github.com/the-sankari/species/raw/main/src/assets/img/homepage.png",
+    "description": "Species is a simple web application designed to help the users explore various species of animals, birds, insects, and fishes. It has features like navigating to different categories and view the detailed information about each single species. Note: Images may not work as the free api is not available",
     "buttons": [
       {
-        "href": "https://github.com/the-sankari/programming_javascript/tree/main/week9/exercise/pokemon",
-        "className": "learn-more",
+        "href": "https://github.com/the-sankari/species",
         "text": "Source Code"
       },
       {
-        "href": "https://the-sankari.github.io/programming_javascript/week9/exercise/pokemon/index.html",
-        "className": "see-work",
+        "href": "https://main.dyok2n6na81bs.amplifyapp.com/",
         "text": "View site"
+      }
+    ],
+    "details": [
+      {
+        "page_1": "https://github.com/the-sankari/species/raw/main/src/assets/img/animal.png"
+      },
+      {
+        "page_2": "https://github.com/the-sankari/species/raw/main/src/assets/img/birds.png"
+      },
+      {
+        "page_3": "https://github.com/the-sankari/species/raw/main/src/assets/img/fishes.png"
+      },
+      {
+        "page_4": "https://github.com/the-sankari/species/raw/main/src/assets/img/insects.png"
+      },
+      {
+        "page_5": "https://github.com/the-sankari/species/raw/main/src/assets/img/singlepage.png"
+      },
+      {
+        "page_6": "https://github.com/the-sankari/species/raw/main/src/assets/img/about.png"
       }
     ]
   },
   {
     "id": 2,
     "title": "Simple Calculator",
-    "imageSrc": "../projects-img/project-2.png",
+    "imageSrc": "./assets/projects-img/project-2.png",
     "description": "A basic calculator that performs basic arithmetic operations like addition, subtraction, multiplication, and division. Users can enter numbers and choose the desired operation using buttons.",
     "buttons": [
       {
@@ -33,12 +51,17 @@
         "className": "see-work",
         "text": "View site"
       }
+    ],
+    "details": [
+      {
+        "page_1": "No other images found"
+      }
     ]
   },
   {
     "id": 3,
     "title": "Todo App",
-    "imageSrc": "../projects-img/project-3.png",
+    "imageSrc": "https://github.com/the-sankari/todoApp/raw/main/images/image.png?raw=true",
     "description": "A task management application that allows users to create, manage, and track their to-do lists. Users can add new tasks, mark them as completed, and edit existing ones.",
     "buttons": [
       {
@@ -51,12 +74,22 @@
         "className": "see-work",
         "text": "Clone repo"
       }
+    ],    "details": [
+      {
+        "page_1": "https://github.com/the-sankari/todoApp/raw/main/images/image%20copy.png?raw=true"
+      },{
+        "page_2": "https://github.com/the-sankari/todoApp/raw/main/images/image%20copy%203.png"
+      },{
+        "page_3": "https://github.com/the-sankari/todoApp/raw/main/images/image%20copy%202.png"
+      },{
+        "page_4": "https://github.com/the-sankari/todoApp/raw/main/images/image%20copy%204.png?raw=true"
+      }
     ]
   },
   {
     "id": 4,
     "title": "Quiz Site",
-    "imageSrc": "../projects-img/project-4.png",
+    "imageSrc": "./assets/projects-img/project-4.png",
     "description": "A web-based quiz platform where users can answer questions on various topics. The platform can keep track of scores and provide feedback to users.",
     "buttons": [
       {
@@ -69,12 +102,16 @@
         "className": "see-work",
         "text": "View site"
       }
+    ],    "details": [
+      {
+        "page_1": "No other images found"
+      }
     ]
   },
   {
     "id": 5,
     "title": "Rock Paper Scissors",
-    "imageSrc": "../projects-img/project-5.png",
+    "imageSrc": "./assets/projects-img/project-5.png",
     "description": "A classic game of Rock Paper Scissors implemented as a web application. Users can choose between rock, paper, and scissors, and the application determines the winner based on the game rules.",
     "buttons": [
       {
@@ -87,12 +124,16 @@
         "className": "see-work",
         "text": "View site"
       }
+    ],    "details": [
+      {
+        "page_1": "No other images found"
+      }
     ]
   },
   {
     "id": 6,
     "title": "Survey Form",
-    "imageSrc": "../projects-img/project-6.png",
+    "imageSrc": "./assets/projects-img/project-6.png",
     "description": "A web-based application that allows users to create and share custom surveys. Users can design surveys with various question types (multiple choice, text input, etc.) and collect responses from others.",
     "buttons": [
       {
@@ -104,6 +145,72 @@
         "href": "https://the-sankari.github.io/survey_form/",
         "className": "see-work",
         "text": "View site"
+      }
+    ],    "details": [
+      {
+        "page_1": "No other images found"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Php bookstore",
+    "imageSrc": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/home_light.png",
+    "description": "This project is a simple PHP-based Book Management System designed to perform CRUD (Create, Read, Update, Delete) operations on a collection of books. It provides a user-friendly interface for adding, viewing, updating, and deleting books from a database.",
+    "buttons": [
+      {
+        "href": "https://github.com/the-sankari/php_02/tree/main/projects/bookstore",
+        "text": "Source Code"
+      },
+      {
+        "href": "https://github.com/the-sankari/php_02/tree/main/projects/bookstore",
+        "text": "View site"
+      }
+    ],
+    "details": [
+      {
+        "page_1": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/home_dark.png"
+      },
+      {
+        "page_2": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/add_light.png"
+      },
+      {
+        "page_3": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/add_dark.png"
+      },
+      {
+        "page_4": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/update_light.png"
+      },
+      {
+        "page_5": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/update_dark.png"
+      },
+      {
+        "page_6": "https://github.com/the-sankari/php_02/raw/main/projects/bookstore/images/notification.png"
+      }
+    ]
+  },{
+    "id": 8,
+    "title": "AWS Project",
+    "imageSrc": "https://github.com/the-sankari/aws-beanstalk/raw/main/src/assets/images/image.png?raw=true",
+    "description": "This project is a simple landing page created to practice AWS Beanstalk and CodePipeline with GitHub. The page displays information about Team 7, consisting of three awesome developers learning Continuous Integration and AWS.",
+    "buttons": [
+      {
+        "href": "https://github.com/the-sankari/aws-beanstalk",
+        "text": "Source Code"
+      },
+      {
+        "href": "http://demo-beanstalk-env-1.eba-wwk4dfk8.us-east-1.elasticbeanstalk.com/",
+        "text": "View site"
+      }
+    ],
+    "details": [
+      {
+        "page_1": "https://github.com/the-sankari/aws-beanstalk/raw/main/src/assets/images/image%20copy.png"
+      },
+      {
+        "page_2": "https://github.com/the-sankari/aws-beanstalk/raw/main/src/assets/images/image%20copy%203.png"
+      },
+      {
+        "page_3": "https://github.com/the-sankari/aws-beanstalk/raw/main/src/assets/images/image%20copy%202.png"
       }
     ]
   }

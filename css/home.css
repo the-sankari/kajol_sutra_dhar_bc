@@ -100,19 +100,18 @@ hr::after {
   top: -50px;
   font-size: 20px;
   color: #ff74038f;
-  animation: fall linear infinite;
+  animation: fallingAnimation linear infinite;
 }
 
-@keyframes fall {
-  0% {
-    top: -50px;
-    opacity: 1;
+@keyframes fallingAnimation {
+  from {
+    transform: translateY(0);
   }
-  100% {
-    top: 100vh;
-    opacity: 0;
+  to {
+    transform: translateY(100vh);
   }
 }
+
 
 /* mobile version */
 
