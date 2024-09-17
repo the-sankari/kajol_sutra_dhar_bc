@@ -80,6 +80,9 @@ header {
   }
   .nav-menu.active {
     left: 0;
+    top: 70px;
+    background-color: var(--primary-color);
+    opacity: .9;
   }
 
   .nav-item {
@@ -102,3 +105,5 @@ header {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
+
