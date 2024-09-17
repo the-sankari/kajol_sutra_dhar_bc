@@ -1,16 +1,12 @@
 /* Footer Styles */
 footer {
-  background: linear-gradient(
-    to right,
-    #303841,
-    #434c57
-  ); /* Gradient Background */
-  color: #fff; /* White Text */
+
+  background-color: var(--primary-color);
+  color: var(--text-color-2); /* White Text */
   padding: 30px 0;
   display: flex; /* Make footer elements flexible */
   justify-content: space-between; /* Distribute elements horizontally */
   align-items: center; /* Align elements vertically */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 .footer-container {
@@ -36,21 +32,9 @@ footer {
   opacity: 0.6;
 }
 .refresh-button {
-  background-color: transparent; /* Blue color */
-  color: #999;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer; /* Indicate clickable button */
-  transition: color 0.2s ease-in-out; /* Smooth hover effect */
+display: none;
 }
 
-.refresh-button:hover {
-  color: #fffff0; /* Darker blue on hover */
-}
-
-.refresh-spin {
-  animation: spin 5s linear infinite;
-}
 
 @keyframes spin {
   from {
@@ -79,5 +63,5 @@ footer {
 
 .social-media a:hover {
   transform: scale(1.1); /* Scale icons slightly on hover */
-  color: #00ffff; /* Cyan hover color */
+ opacity: 0.7;
 }
