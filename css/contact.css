@@ -6,11 +6,7 @@
     padding: 20px;
   }
 }
-.contact-left > p {
 
-  font-size: 1.5rem;
-  color: var(--text-color);
-}
 .contact-container {
   width: 100%;
   display: flex;
@@ -26,10 +22,15 @@
   position: relative;
 }
 
+.contact-left > p {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
 .profile-card {
   position: absolute;
   right: -100px;
   top: 10%;
+  border-radius: 10px;
   box-shadow: 0 0 10px var(--text-color);
   width: 250px;
   max-width: 300px;
